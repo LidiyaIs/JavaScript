@@ -18,4 +18,33 @@ console.log(sum(2, 6)); должно вывести число 8 в консол
 Демонстрировать работы функций не обязательно.
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
+let number1 = +prompt("Введите первое число");
+let number2 = +prompt("Введите второе число");
+
+console.log(`${number1} + ${number2} = ${summa(number1, number2)}`);
+
+if (number1 > number2)
+    console.log(`${number1} - ${number2} = ${raznost(number1, number2)}`);
+else
+    console.log(`${number2} - ${number1} = ${raznost(number2, number1)}`);
+
+console.log(`${number1} * ${number2} = ${proizv(number1, number2)}`);
+
+console.log(`${number1} / ${number2} = ${delen(number1, number2)}`);
+console.log(`${number2} / ${number1} = ${delen(number2, number1)}`);
+
+function summa(a, b) {
+    return a + b;
+}
+
+function raznost(a, b) {
+    return a - b;
+}
+
+function proizv(a, b) {
+  return a * b;
+}
+
+function delen(a, b) {
+    return a / b;
+}
