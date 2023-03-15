@@ -10,5 +10,5 @@ let number = Math.floor(Math.random() * 10);
 console.log(`куб числа ${number} = ${cub(number)}`);
 
 function cub(a) {
-return Math.pow(a,3);
+return Math.pow(a,3); //a**3 - вариант нахождения куба числа
 }
