@@ -8,6 +8,8 @@
 */
 
 const arr = [1, 2, 3, 4, 5, 6, 7];
-const arr2 = arr.slice (0,2);
-arr2.push (100, 6, 7);
-console.log (arr2);
+const arr2 = arr.slice(0,2);
+arr2.push(100, 6, 7);
+console.log(arr2);
+
+//После названия функции/метода не ставим пробел до круглой скобки. Можно было сделать проще - arr.splice(2, 3, 100);-???

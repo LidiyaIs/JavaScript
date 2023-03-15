@@ -18,21 +18,21 @@ const arr = [];
 
 //генерация массива
 for (let i = 0; i < 5; i++) {
-  arr.push(Math.floor(Math.random() * 10));
+    arr.push(Math.floor(Math.random() * 10));
 }
-console.log (`исходный массив: ${arr.join()}`);
+console.log(`исходный массив: ${arr.join()}`);
 
 //1. Сумма элементов массива
 let sum = 0;
-for (let i = 0; i < 5; i++) {
+for (let i = 0; i < arr.length; i++) {
     sum += arr[i];
 }
 console.log(`сумма элементов массива равна ${sum}`);
 
 //2. Поиск минимального значения
-let min=arr[0];
-for (let i = 1; i < 5; i++) {
-    if (arr[i]<min) min=arr[i];
+let min = arr[0];
+for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) min = arr[i];
 }
 console.log(`минимальный элемент ${min}`);
 
@@ -40,8 +40,7 @@ console.log(`минимальный элемент ${min}`);
 const index3 = [];
 
 for (let i = 0; i < 5; i++) {
-    if (arr[i]==3)
-        index3.push(i);
+    if (arr[i] === 3) index3.push(i);
 }
 
-console.log (`новый массив: ${index3.join()}`);
+console.log(`новый массив: ${index3.join()}`);
