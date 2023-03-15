@@ -23,5 +23,5 @@ const products = [
   },
 ];
 
-products.forEach(product => {product.price = product.price*0.85;});
+products.forEach(product => product.price = product.price * 0.85); //можно без фигурных скобок так как только одно выражение
 console.log(products);

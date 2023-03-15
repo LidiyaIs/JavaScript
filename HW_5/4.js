@@ -33,7 +33,7 @@ const products = [
 
 //1 часть
 const photoProducts = products.filter((product) => {
-  if (('photos' in product) && (product.photos.length !==0)) return true
+  if (('photos' in product) && (product.photos.length !== 0)) return true
   return false
 });
 
